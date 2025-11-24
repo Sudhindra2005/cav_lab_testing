@@ -1,0 +1,6 @@
+Invoking command in '/home/sudhindra/joy_commands/build/manual_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sudhindra/joy_commands/src/manual_control -DCMAKE_INSTALL_PREFIX=/home/sudhindra/joy_commands/install/manual_control
+Invoked command in '/home/sudhindra/joy_commands/build/manual_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sudhindra/joy_commands/src/manual_control -DCMAKE_INSTALL_PREFIX=/home/sudhindra/joy_commands/install/manual_control
+Invoking command in '/home/sudhindra/joy_commands/build/manual_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sudhindra/joy_commands/build/manual_control -- -j16 -l16
+Invoked command in '/home/sudhindra/joy_commands/build/manual_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sudhindra/joy_commands/build/manual_control -- -j16 -l16
+Invoking command in '/home/sudhindra/joy_commands/build/manual_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sudhindra/joy_commands/build/manual_control
+Invoked command in '/home/sudhindra/joy_commands/build/manual_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sudhindra/joy_commands/build/manual_control

@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target udp_joystick_sender[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/udp_joystick_sender.dir/src/udp_joystick_sender.cpp.o[0m
+[100%] [32m[1mLinking CXX executable udp_joystick_sender[0m
+[100%] Built target udp_joystick_sender
+-- Install configuration: ""
+-- Installing: /home/sudhindra/joy_commands/install/manual_control/lib/manual_control/udp_joystick_sender
+-- Set runtime path of "/home/sudhindra/joy_commands/install/manual_control/lib/manual_control/udp_joystick_sender" to ""
+-- Installing: /home/sudhindra/joy_commands/install/manual_control/share/ament_index/resource_index/package_run_dependencies/manual_control
+-- Installing: /home/sudhindra/joy_commands/install/manual_control/share/ament_index/resource_index/parent_prefix_path/manual_control
+-- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/ament_prefix_path.sh
+-- Installing: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/path.sh
+-- Installing: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/path.dsv
+-- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.bash
+-- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.sh
+-- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.zsh
+-- Installing: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.dsv
+-- Installing: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/package.dsv
+-- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/ament_index/resource_index/packages/manual_control
+-- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/cmake/manual_controlConfig.cmake
+-- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/cmake/manual_controlConfig-version.cmake
+-- Installing: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/package.xml

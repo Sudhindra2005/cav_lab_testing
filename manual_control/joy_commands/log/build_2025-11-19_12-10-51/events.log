@@ -1,0 +1,256 @@
+[0.000000] (-) TimerEvent: {}
+[0.000602] (manual_control) JobQueued: {'identifier': 'manual_control', 'dependencies': OrderedDict()}
+[0.000662] (manual_control) JobStarted: {'identifier': 'manual_control'}
+[0.013977] (manual_control) JobProgress: {'identifier': 'manual_control', 'progress': 'cmake'}
+[0.015263] (manual_control) JobProgress: {'identifier': 'manual_control', 'progress': 'build'}
+[0.016908] (manual_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sudhindra/joy_commands/build/manual_control', '--', '-j16', '-l16'], 'cwd': '/home/sudhindra/joy_commands/build/manual_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'sudhindra'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sudhindra'), ('OLDPWD', '/home/sudhindra/joy_commands/src/manual_control'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4564'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sudhindra/joy_commands/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sudhindra'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sudhindra'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sudhindra-Victus-by-HP-Gaming-Laptop-16-s0xxx:@/tmp/.ICE-unix/1811,unix/sudhindra-Victus-by-HP-Gaming-Laptop-16-s0xxx:/tmp/.ICE-unix/1811'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d40e9804_859c_45a5_b191_aa05b7df2e62'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4UV1F3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sudhindra/joy_commands/install/manual_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sudhindra/joy_commands/build/manual_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sudhindra/joy_commands/install/manual_control:/opt/ros/humble')]), 'shell': False}
+[0.074338] (manual_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098409] (-) TimerEvent: {}
+[0.198839] (-) TimerEvent: {}
+[0.299300] (-) TimerEvent: {}
+[0.315473] (manual_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.369673] (manual_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.374138] (manual_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.384756] (manual_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.399425] (-) TimerEvent: {}
+[0.401993] (manual_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.424103] (manual_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.483656] (manual_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.486083] (manual_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.499554] (-) TimerEvent: {}
+[0.599964] (-) TimerEvent: {}
+[0.689091] (manual_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.700087] (-) TimerEvent: {}
+[0.780784] (manual_control) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.800284] (-) TimerEvent: {}
+[0.838535] (manual_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.900426] (-) TimerEvent: {}
+[0.974649] (manual_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.975185] (manual_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.975316] (manual_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.975920] (manual_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.977598] (manual_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.977816] (manual_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.978192] (manual_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.979573] (manual_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.999523] (manual_control) StdoutLine: {'line': b'-- Generating done\n'}
+[1.000550] (-) TimerEvent: {}
+[1.007237] (manual_control) StdoutLine: {'line': b'-- Build files have been written to: /home/sudhindra/joy_commands/build/manual_control\n'}
+[1.066453] (manual_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target udp_joystick_sender\x1b[0m\n'}
+[1.100739] (-) TimerEvent: {}
+[1.104001] (manual_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/udp_joystick_sender.dir/src/udp_joystick_sender.cpp.o\x1b[0m\n'}
+[1.200896] (-) TimerEvent: {}
+[1.301333] (-) TimerEvent: {}
+[1.401927] (-) TimerEvent: {}
+[1.502393] (-) TimerEvent: {}
+[1.602879] (-) TimerEvent: {}
+[1.703359] (-) TimerEvent: {}
+[1.803871] (-) TimerEvent: {}
+[1.904356] (-) TimerEvent: {}
+[2.004848] (-) TimerEvent: {}
+[2.105315] (-) TimerEvent: {}
+[2.205842] (-) TimerEvent: {}
+[2.306349] (-) TimerEvent: {}
+[2.406836] (-) TimerEvent: {}
+[2.507410] (-) TimerEvent: {}
+[2.607815] (-) TimerEvent: {}
+[2.708230] (-) TimerEvent: {}
+[2.808628] (-) TimerEvent: {}
+[2.909045] (-) TimerEvent: {}
+[3.009417] (-) TimerEvent: {}
+[3.109819] (-) TimerEvent: {}
+[3.210236] (-) TimerEvent: {}
+[3.310613] (-) TimerEvent: {}
+[3.411058] (-) TimerEvent: {}
+[3.511483] (-) TimerEvent: {}
+[3.611928] (-) TimerEvent: {}
+[3.712344] (-) TimerEvent: {}
+[3.812786] (-) TimerEvent: {}
+[3.913286] (-) TimerEvent: {}
+[4.013686] (-) TimerEvent: {}
+[4.114369] (-) TimerEvent: {}
+[4.215066] (-) TimerEvent: {}
+[4.315484] (-) TimerEvent: {}
+[4.415886] (-) TimerEvent: {}
+[4.516279] (-) TimerEvent: {}
+[4.616687] (-) TimerEvent: {}
+[4.717261] (-) TimerEvent: {}
+[4.817895] (-) TimerEvent: {}
+[4.918285] (-) TimerEvent: {}
+[5.018672] (-) TimerEvent: {}
+[5.029524] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:37:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.029853] (manual_control) StderrLine: {'line': b'   37 |     void joyCallback(const sensor_msgs::msg::Joy\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr msg) {\n'}
+[5.029991] (manual_control) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.106177] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid UdpJoySender::joyCallback(sensor_msgs::msg::Joy)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.106921] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:38:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.107061] (manual_control) StderrLine: {'line': b'   38 |         if (\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K->axes.size() < 2) {\n'}
+[5.107168] (manual_control) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.107263] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:38:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[5.107355] (manual_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7\x1b[m\x1b[K,\n'}
+[5.107453] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[5.107547] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[5.107635] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32\x1b[m\x1b[K,\n'}
+[5.107722] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42\x1b[m\x1b[K,\n'}
+[5.107824] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[5.108613] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.108756] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.108919] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.109027] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.109118] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[5.109207] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.109295] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.109392] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.109485] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:1\x1b[m\x1b[K:\n'}
+[5.109578] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.109659] (manual_control) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.109737] (manual_control) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.109830] (manual_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[5.109909] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28\x1b[m\x1b[K,\n'}
+[5.109986] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30\x1b[m\x1b[K,\n'}
+[5.110061] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45\x1b[m\x1b[K,\n'}
+[5.110136] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[5.110212] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.110287] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.110362] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.110436] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[5.110511] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.110585] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.110660] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.110734] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:1\x1b[m\x1b[K:\n'}
+[5.110831] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.110934] (manual_control) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.111011] (manual_control) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.111086] (manual_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23\x1b[m\x1b[K,\n'}
+[5.111163] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[5.111240] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[5.111314] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[5.111397] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[5.111477] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[5.111553] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.111628] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.111704] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.111792] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[5.111881] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.111958] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.112041] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.112116] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:1\x1b[m\x1b[K:\n'}
+[5.112190] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.112267] (manual_control) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.112340] (manual_control) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.112414] (manual_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joy__struct.hpp:20\x1b[m\x1b[K,\n'}
+[5.112489] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joy.hpp:7\x1b[m\x1b[K,\n'}
+[5.112563] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:2\x1b[m\x1b[K:\n'}
+[5.112638] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.112727] (manual_control) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.112832] (manual_control) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.112913] (manual_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joy.hpp:7\x1b[m\x1b[K,\n'}
+[5.112988] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:2\x1b[m\x1b[K:\n'}
+[5.113063] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joy__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.113140] (manual_control) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.113214] (manual_control) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.113288] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:44:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.113365] (manual_control) StderrLine: {'line': b'   44 |         float motor = \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K->axes[1];  // vertical axis\n'}
+[5.113441] (manual_control) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.113517] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:44:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[5.113594] (manual_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7\x1b[m\x1b[K,\n'}
+[5.113668] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[5.113743] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[5.113834] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32\x1b[m\x1b[K,\n'}
+[5.113913] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42\x1b[m\x1b[K,\n'}
+[5.113988] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[5.114062] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.114143] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.114217] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.114292] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.114366] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[5.114441] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.114516] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.114590] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.114664] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:1\x1b[m\x1b[K:\n'}
+[5.114744] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.114840] (manual_control) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.114920] (manual_control) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.115002] (manual_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[5.115078] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28\x1b[m\x1b[K,\n'}
+[5.115153] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30\x1b[m\x1b[K,\n'}
+[5.115227] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45\x1b[m\x1b[K,\n'}
+[5.115302] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[5.115377] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.115451] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.115526] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.115600] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[5.115675] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.115749] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.115841] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.115919] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:1\x1b[m\x1b[K:\n'}
+[5.116002] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.116078] (manual_control) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.116153] (manual_control) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.116227] (manual_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23\x1b[m\x1b[K,\n'}
+[5.116303] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[5.116378] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[5.116453] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[5.116535] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[5.116610] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[5.116685] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.116758] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.116851] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.116926] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[5.116999] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.117074] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.117149] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.117236] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:1\x1b[m\x1b[K:\n'}
+[5.117310] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.117386] (manual_control) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.117460] (manual_control) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.117534] (manual_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joy__struct.hpp:20\x1b[m\x1b[K,\n'}
+[5.117608] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joy.hpp:7\x1b[m\x1b[K,\n'}
+[5.117682] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:2\x1b[m\x1b[K:\n'}
+[5.117765] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.117862] (manual_control) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.117937] (manual_control) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.118011] (manual_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joy.hpp:7\x1b[m\x1b[K,\n'}
+[5.118086] (manual_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sudhindra/joy_commands/src/manual_control/src/udp_joystick_sender.cpp:2\x1b[m\x1b[K:\n'}
+[5.118162] (manual_control) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joy__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.118236] (manual_control) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[5.118311] (manual_control) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.118813] (-) TimerEvent: {}
+[5.219189] (-) TimerEvent: {}
+[5.319609] (-) TimerEvent: {}
+[5.420052] (-) TimerEvent: {}
+[5.520469] (-) TimerEvent: {}
+[5.620886] (-) TimerEvent: {}
+[5.721303] (-) TimerEvent: {}
+[5.821704] (-) TimerEvent: {}
+[5.922146] (-) TimerEvent: {}
+[6.022539] (-) TimerEvent: {}
+[6.123019] (-) TimerEvent: {}
+[6.223436] (-) TimerEvent: {}
+[6.323839] (-) TimerEvent: {}
+[6.424219] (-) TimerEvent: {}
+[6.524636] (-) TimerEvent: {}
+[6.625030] (-) TimerEvent: {}
+[6.725403] (-) TimerEvent: {}
+[6.825805] (-) TimerEvent: {}
+[6.926207] (-) TimerEvent: {}
+[7.026588] (-) TimerEvent: {}
+[7.127042] (-) TimerEvent: {}
+[7.227420] (-) TimerEvent: {}
+[7.327853] (-) TimerEvent: {}
+[7.428236] (-) TimerEvent: {}
+[7.528638] (-) TimerEvent: {}
+[7.629071] (-) TimerEvent: {}
+[7.729515] (-) TimerEvent: {}
+[7.829881] (-) TimerEvent: {}
+[7.930260] (-) TimerEvent: {}
+[8.030611] (-) TimerEvent: {}
+[8.130988] (-) TimerEvent: {}
+[8.231353] (-) TimerEvent: {}
+[8.331740] (-) TimerEvent: {}
+[8.432126] (-) TimerEvent: {}
+[8.482617] (manual_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/udp_joystick_sender.dir/build.make:76: CMakeFiles/udp_joystick_sender.dir/src/udp_joystick_sender.cpp.o] Error 1\n'}
+[8.483009] (manual_control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/udp_joystick_sender.dir/all] Error 2\n'}
+[8.483473] (manual_control) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.486749] (manual_control) CommandEnded: {'returncode': 2}
+[8.497940] (manual_control) JobEnded: {'identifier': 'manual_control', 'rc': 2}
+[8.509212] (-) EventReactorShutdown: {}

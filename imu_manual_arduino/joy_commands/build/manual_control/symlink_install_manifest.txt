@@ -1,0 +1,16 @@
+/home/sudhindra/joy_commands/install/manual_control/lib/manual_control/udp_joystick_sender
+/home/sudhindra/joy_commands/install/manual_control/share/ament_index/resource_index/package_run_dependencies/manual_control
+/home/sudhindra/joy_commands/install/manual_control/share/ament_index/resource_index/parent_prefix_path/manual_control
+/home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/ament_prefix_path.sh
+/home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/ament_prefix_path.dsv
+/home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/path.sh
+/home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/path.dsv
+/home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.bash
+/home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.sh
+/home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.zsh
+/home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.dsv
+/home/sudhindra/joy_commands/install/manual_control/share/manual_control/package.dsv
+/home/sudhindra/joy_commands/install/manual_control/share/ament_index/resource_index/packages/manual_control
+/home/sudhindra/joy_commands/install/manual_control/share/manual_control/cmake/manual_controlConfig.cmake
+/home/sudhindra/joy_commands/install/manual_control/share/manual_control/cmake/manual_controlConfig-version.cmake
+/home/sudhindra/joy_commands/install/manual_control/share/manual_control/package.xml

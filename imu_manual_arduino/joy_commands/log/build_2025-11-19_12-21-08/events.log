@@ -1,0 +1,172 @@
+[0.000000] (-) TimerEvent: {}
+[0.001373] (manual_control) JobQueued: {'identifier': 'manual_control', 'dependencies': OrderedDict()}
+[0.001452] (manual_control) JobStarted: {'identifier': 'manual_control'}
+[0.014850] (manual_control) JobProgress: {'identifier': 'manual_control', 'progress': 'cmake'}
+[0.016725] (manual_control) Command: {'cmd': ['/usr/bin/cmake', '/home/sudhindra/joy_commands/src/manual_control', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/sudhindra/joy_commands/install/manual_control'], 'cwd': '/home/sudhindra/joy_commands/build/manual_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'sudhindra'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sudhindra'), ('OLDPWD', '/home/sudhindra/joy_commands/src/manual_control'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4564'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sudhindra/joy_commands/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sudhindra'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sudhindra'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sudhindra-Victus-by-HP-Gaming-Laptop-16-s0xxx:@/tmp/.ICE-unix/1811,unix/sudhindra-Victus-by-HP-Gaming-Laptop-16-s0xxx:/tmp/.ICE-unix/1811'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d40e9804_859c_45a5_b191_aa05b7df2e62'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4UV1F3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sudhindra/joy_commands/install/manual_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sudhindra/joy_commands/build/manual_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sudhindra/joy_commands/install/manual_control:/opt/ros/humble')]), 'shell': False}
+[0.047050] (manual_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099490] (-) TimerEvent: {}
+[0.199910] (-) TimerEvent: {}
+[0.278512] (manual_control) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.294561] (manual_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.300024] (-) TimerEvent: {}
+[0.349115] (manual_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.353555] (manual_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.364288] (manual_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.381569] (manual_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.400152] (-) TimerEvent: {}
+[0.403758] (manual_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.463702] (manual_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.466092] (manual_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500283] (-) TimerEvent: {}
+[0.600641] (-) TimerEvent: {}
+[0.674570] (manual_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.700757] (-) TimerEvent: {}
+[0.766472] (manual_control) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.800882] (-) TimerEvent: {}
+[0.821417] (manual_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.901061] (-) TimerEvent: {}
+[0.960236] (manual_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.960705] (manual_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.960873] (manual_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.961452] (manual_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.963208] (manual_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.963408] (manual_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.963763] (manual_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.965567] (manual_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.985768] (manual_control) StdoutLine: {'line': b'-- Generating done\n'}
+[0.991013] (manual_control) StdoutLine: {'line': b'-- Build files have been written to: /home/sudhindra/joy_commands/build/manual_control\n'}
+[1.001180] (-) TimerEvent: {}
+[1.006238] (manual_control) CommandEnded: {'returncode': 0}
+[1.007305] (manual_control) JobProgress: {'identifier': 'manual_control', 'progress': 'build'}
+[1.010301] (manual_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sudhindra/joy_commands/build/manual_control', '--', '-j16', '-l16'], 'cwd': '/home/sudhindra/joy_commands/build/manual_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'sudhindra'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sudhindra'), ('OLDPWD', '/home/sudhindra/joy_commands/src/manual_control'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4564'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sudhindra/joy_commands/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sudhindra'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sudhindra'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sudhindra-Victus-by-HP-Gaming-Laptop-16-s0xxx:@/tmp/.ICE-unix/1811,unix/sudhindra-Victus-by-HP-Gaming-Laptop-16-s0xxx:/tmp/.ICE-unix/1811'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d40e9804_859c_45a5_b191_aa05b7df2e62'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4UV1F3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sudhindra/joy_commands/install/manual_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sudhindra/joy_commands/build/manual_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sudhindra/joy_commands/install/manual_control:/opt/ros/humble')]), 'shell': False}
+[1.097280] (manual_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target udp_joystick_sender\x1b[0m\n'}
+[1.101315] (-) TimerEvent: {}
+[1.134430] (manual_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/udp_joystick_sender.dir/src/udp_joystick_sender.cpp.o\x1b[0m\n'}
+[1.201489] (-) TimerEvent: {}
+[1.301906] (-) TimerEvent: {}
+[1.402330] (-) TimerEvent: {}
+[1.502764] (-) TimerEvent: {}
+[1.603217] (-) TimerEvent: {}
+[1.703683] (-) TimerEvent: {}
+[1.804180] (-) TimerEvent: {}
+[1.904634] (-) TimerEvent: {}
+[2.005215] (-) TimerEvent: {}
+[2.105602] (-) TimerEvent: {}
+[2.206018] (-) TimerEvent: {}
+[2.306386] (-) TimerEvent: {}
+[2.406767] (-) TimerEvent: {}
+[2.507189] (-) TimerEvent: {}
+[2.607563] (-) TimerEvent: {}
+[2.707970] (-) TimerEvent: {}
+[2.808359] (-) TimerEvent: {}
+[2.908736] (-) TimerEvent: {}
+[3.009153] (-) TimerEvent: {}
+[3.109551] (-) TimerEvent: {}
+[3.209915] (-) TimerEvent: {}
+[3.310278] (-) TimerEvent: {}
+[3.410661] (-) TimerEvent: {}
+[3.511080] (-) TimerEvent: {}
+[3.611433] (-) TimerEvent: {}
+[3.711862] (-) TimerEvent: {}
+[3.812393] (-) TimerEvent: {}
+[3.912777] (-) TimerEvent: {}
+[4.013202] (-) TimerEvent: {}
+[4.113576] (-) TimerEvent: {}
+[4.213992] (-) TimerEvent: {}
+[4.314360] (-) TimerEvent: {}
+[4.414739] (-) TimerEvent: {}
+[4.515130] (-) TimerEvent: {}
+[4.615524] (-) TimerEvent: {}
+[4.715935] (-) TimerEvent: {}
+[4.816358] (-) TimerEvent: {}
+[4.916737] (-) TimerEvent: {}
+[5.017165] (-) TimerEvent: {}
+[5.117566] (-) TimerEvent: {}
+[5.217980] (-) TimerEvent: {}
+[5.318397] (-) TimerEvent: {}
+[5.418798] (-) TimerEvent: {}
+[5.519237] (-) TimerEvent: {}
+[5.619713] (-) TimerEvent: {}
+[5.720201] (-) TimerEvent: {}
+[5.820601] (-) TimerEvent: {}
+[5.921014] (-) TimerEvent: {}
+[6.021418] (-) TimerEvent: {}
+[6.121775] (-) TimerEvent: {}
+[6.222156] (-) TimerEvent: {}
+[6.322515] (-) TimerEvent: {}
+[6.422895] (-) TimerEvent: {}
+[6.523400] (-) TimerEvent: {}
+[6.624139] (-) TimerEvent: {}
+[6.724539] (-) TimerEvent: {}
+[6.824966] (-) TimerEvent: {}
+[6.925366] (-) TimerEvent: {}
+[7.025755] (-) TimerEvent: {}
+[7.126175] (-) TimerEvent: {}
+[7.226565] (-) TimerEvent: {}
+[7.326961] (-) TimerEvent: {}
+[7.427370] (-) TimerEvent: {}
+[7.527780] (-) TimerEvent: {}
+[7.628195] (-) TimerEvent: {}
+[7.728578] (-) TimerEvent: {}
+[7.828996] (-) TimerEvent: {}
+[7.929375] (-) TimerEvent: {}
+[8.029743] (-) TimerEvent: {}
+[8.130156] (-) TimerEvent: {}
+[8.230534] (-) TimerEvent: {}
+[8.330915] (-) TimerEvent: {}
+[8.431299] (-) TimerEvent: {}
+[8.531682] (-) TimerEvent: {}
+[8.632098] (-) TimerEvent: {}
+[8.732484] (-) TimerEvent: {}
+[8.832888] (-) TimerEvent: {}
+[8.933273] (-) TimerEvent: {}
+[9.033653] (-) TimerEvent: {}
+[9.134009] (-) TimerEvent: {}
+[9.234373] (-) TimerEvent: {}
+[9.334734] (-) TimerEvent: {}
+[9.435112] (-) TimerEvent: {}
+[9.535453] (-) TimerEvent: {}
+[9.635785] (-) TimerEvent: {}
+[9.736129] (-) TimerEvent: {}
+[9.836462] (-) TimerEvent: {}
+[9.936771] (-) TimerEvent: {}
+[10.037078] (-) TimerEvent: {}
+[10.137405] (-) TimerEvent: {}
+[10.237727] (-) TimerEvent: {}
+[10.338052] (-) TimerEvent: {}
+[10.438368] (-) TimerEvent: {}
+[10.538694] (-) TimerEvent: {}
+[10.639023] (-) TimerEvent: {}
+[10.739333] (-) TimerEvent: {}
+[10.839648] (-) TimerEvent: {}
+[10.939958] (-) TimerEvent: {}
+[10.963872] (manual_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable udp_joystick_sender\x1b[0m\n'}
+[11.040095] (-) TimerEvent: {}
+[11.140415] (-) TimerEvent: {}
+[11.193755] (manual_control) StdoutLine: {'line': b'[100%] Built target udp_joystick_sender\n'}
+[11.205700] (manual_control) CommandEnded: {'returncode': 0}
+[11.206131] (manual_control) JobProgress: {'identifier': 'manual_control', 'progress': 'install'}
+[11.214907] (manual_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sudhindra/joy_commands/build/manual_control'], 'cwd': '/home/sudhindra/joy_commands/build/manual_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'sudhindra'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sudhindra'), ('OLDPWD', '/home/sudhindra/joy_commands/src/manual_control'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4564'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sudhindra/joy_commands/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sudhindra'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sudhindra'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sudhindra-Victus-by-HP-Gaming-Laptop-16-s0xxx:@/tmp/.ICE-unix/1811,unix/sudhindra-Victus-by-HP-Gaming-Laptop-16-s0xxx:/tmp/.ICE-unix/1811'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d40e9804_859c_45a5_b191_aa05b7df2e62'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4UV1F3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sudhindra/joy_commands/install/manual_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sudhindra/joy_commands/build/manual_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sudhindra/joy_commands/install/manual_control:/opt/ros/humble')]), 'shell': False}
+[11.220214] (manual_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.220567] (manual_control) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[11.220779] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/lib/manual_control/udp_joystick_sender\n'}
+[11.228376] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/ament_index/resource_index/package_run_dependencies/manual_control\n'}
+[11.236949] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/ament_index/resource_index/parent_prefix_path/manual_control\n'}
+[11.240517] (-) TimerEvent: {}
+[11.244733] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/ament_prefix_path.sh\n'}
+[11.252304] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/ament_prefix_path.dsv\n'}
+[11.260140] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/path.sh\n'}
+[11.269865] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/path.dsv\n'}
+[11.277734] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.bash\n'}
+[11.286902] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.sh\n'}
+[11.294136] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.zsh\n'}
+[11.302122] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.dsv\n'}
+[11.310076] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/package.dsv\n'}
+[11.317833] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/ament_index/resource_index/packages/manual_control\n'}
+[11.325162] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/cmake/manual_controlConfig.cmake\n'}
+[11.333519] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/cmake/manual_controlConfig-version.cmake\n'}
+[11.340625] (-) TimerEvent: {}
+[11.341257] (manual_control) StdoutLine: {'line': b'-- Symlinking: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/package.xml\n'}
+[11.350920] (manual_control) CommandEnded: {'returncode': 0}
+[11.361367] (manual_control) JobEnded: {'identifier': 'manual_control', 'rc': 0}
+[11.361904] (-) EventReactorShutdown: {}

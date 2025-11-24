@@ -1,0 +1,26 @@
+[0.022s] Invoking command in '/home/sudhindra/joy_commands/build/manual_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sudhindra/joy_commands/build/manual_control -- -j16 -l16
+[0.109s] [35m[1mConsolidate compiler generated dependencies of target udp_joystick_sender[0m
+[0.150s] [ 50%] [32mBuilding CXX object CMakeFiles/udp_joystick_sender.dir/src/udp_joystick_sender.cpp.o[0m
+[10.556s] [100%] [32m[1mLinking CXX executable udp_joystick_sender[0m
+[10.783s] [100%] Built target udp_joystick_sender
+[10.792s] Invoked command in '/home/sudhindra/joy_commands/build/manual_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sudhindra/joy_commands/build/manual_control -- -j16 -l16
+[10.801s] Invoking command in '/home/sudhindra/joy_commands/build/manual_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sudhindra/joy_commands/build/manual_control
+[10.806s] -- Install configuration: ""
+[10.806s] -- Installing: /home/sudhindra/joy_commands/install/manual_control/lib/manual_control/udp_joystick_sender
+[10.810s] -- Set runtime path of "/home/sudhindra/joy_commands/install/manual_control/lib/manual_control/udp_joystick_sender" to ""
+[10.810s] -- Installing: /home/sudhindra/joy_commands/install/manual_control/share/ament_index/resource_index/package_run_dependencies/manual_control
+[10.810s] -- Installing: /home/sudhindra/joy_commands/install/manual_control/share/ament_index/resource_index/parent_prefix_path/manual_control
+[10.810s] -- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/ament_prefix_path.sh
+[10.810s] -- Installing: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/ament_prefix_path.dsv
+[10.810s] -- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/path.sh
+[10.810s] -- Installing: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/environment/path.dsv
+[10.810s] -- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.bash
+[10.811s] -- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.sh
+[10.811s] -- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.zsh
+[10.811s] -- Installing: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/local_setup.dsv
+[10.811s] -- Installing: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/package.dsv
+[10.811s] -- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/ament_index/resource_index/packages/manual_control
+[10.811s] -- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/cmake/manual_controlConfig.cmake
+[10.811s] -- Up-to-date: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/cmake/manual_controlConfig-version.cmake
+[10.811s] -- Installing: /home/sudhindra/joy_commands/install/manual_control/share/manual_control/package.xml
+[10.812s] Invoked command in '/home/sudhindra/joy_commands/build/manual_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sudhindra/joy_commands/build/manual_control

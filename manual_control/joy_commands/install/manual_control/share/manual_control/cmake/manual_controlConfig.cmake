@@ -1,0 +1,1 @@
+/home/sudhindra/joy_commands/build/manual_control/ament_cmake_core/manual_controlConfig.cmake
