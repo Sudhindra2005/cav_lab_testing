@@ -68,13 +68,13 @@ void loop() {
 
     // Calculate average
     float smooth_rpm = total_rpm / NUM_SAMPLES;
-    float final = smooth_rpm + 5;
+    float final_rpm = smooth_rpm + 5;
 
     // Print Results
     Serial.print("Raw: ");
     Serial.print(instantaneous_rpm);
     Serial.print(" | Smooth: ");
-    Serial.println(final);
+    Serial.println(final_rpm);
   }
 
   // 3. Timeout Logic (Detect Stopped Motor)
