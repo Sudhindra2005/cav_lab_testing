@@ -1,8 +1,9 @@
 /*
- * FINAL MERGED FIRMWARE: ATmega2560
- * 1. Uses the custom PIN definitions (PE6 for BLDC, Pin 3 for Servo) 
- * 2. BLDC/Servo control is driven by the Jitter-Free TIMER3 INTERRUPT.
- * 3. SPI Slave and IMU I2C logic remain unchanged from previous successful version.
+ * FINAL FIXED FIRMWARE: ATmega2560
+ * 1. Solves "__vector_32" error by removing Servo.h
+ * 2. Uses TIMER3 to drive BOTH BLDC (Pin 23) and Servo (Pin 10)
+ * 3. Blocking I2C for BNO055 (Stable)
+ * 4. SPI Slave for RPi Communication
  */
 
 #define F_CPU 16000000UL
@@ -12,11 +13,9 @@
 #include <avr/interrupt.h>
 #include <util/delay.h>
 
-// --- PIN DEFINITIONS (Based on your working code) ---
-#define SERVO_PIN 3        // Servo is now controlled by Timer3 Interrupt (Pin D3 on Mega is PE5, which is OC3C, but we use software toggle)
-#define BLDC_PORT PORTE    // Port E (where PE6 resides)
-#define BLDC_DDR  DDRE
-#define BLDC_PIN_BIT PE6   // PE6 = Arduino Digital Pin 7
+// --- PIN DEFINITIONS ---
+#define BLDC_PIN 23      // Software PWM Channel A
+#define SERVO_PIN 10     // Software PWM Channel B
 
 // --- CONSTANTS ---
 #define MIN_PULSE 1000
@@ -42,11 +41,12 @@ volatile uint8_t rx_index = 0;
 volatile bool packetReady = false;
 
 // PWM Pulse States (Volatile for ISR)
-volatile uint16_t bldc_ocr_val = 2000; // 1000us * 2 ticks/us
-volatile uint16_t servo_ocr_val = 3000; // 1500us * 2 ticks/us
+// Default to mid-point (1500us * 2 ticks/us = 3000 ticks)
+volatile uint16_t bldc_ocr_val = 3000; 
+volatile uint16_t servo_ocr_val = 3000; 
 
 // ================================================================
-// ==================== 1. TWI / I2C DRIVER (UNCHANGED) ===========
+// ==================== 1. TWI / I2C DRIVER =======================
 // ================================================================
 
 void TWI_init(void) {
@@ -96,7 +96,7 @@ void BNO_init(void) {
 }
 
 // ================================================================
-// ==================== 2. SPI SLAVE (UNCHANGED) ==================
+// ==================== 2. SPI SLAVE ==============================
 // ================================================================
 
 void SPI_init_slave(void) {
@@ -113,7 +113,7 @@ ISR(SPI_STC_vect) {
     tx_index++;
     if (tx_index >= 12) tx_index = 0;
 
-    // Receive Logic (Sync Byte 0xAA)
+    // Receive Logic
     static bool synced = false;
     if (incoming == 0xAA) {
         rx_index = 0;
@@ -133,14 +133,17 @@ ISR(SPI_STC_vect) {
 // ================================================================
 // ==================== 3. DUAL PWM TIMER DRIVER ==================
 // ================================================================
+/* * Timer 3 (16-bit) controls BOTH pins now.
+ * Prescaler 8 -> 0.5us per tick.
+ * Frame: 20ms (40,000 ticks).
+ * COMPA handles BLDC (Pin 23).
+ * COMPB handles Servo (Pin 10).
+ */
 
 void PWM_Timer_Init() {
-    // BLDC setup using direct port manipulation (from your code)
-    BLDC_DDR |= (1 << BLDC_PIN_BIT);
-    BLDC_PORT &= ~(1 << BLDC_PIN_BIT);
-
-    // Servo setup using Arduino digital pin (Pin 3)
+    pinMode(BLDC_PIN, OUTPUT);
     pinMode(SERVO_PIN, OUTPUT);
+    digitalWrite(BLDC_PIN, LOW);
     digitalWrite(SERVO_PIN, LOW);
 
     cli(); 
@@ -158,29 +161,24 @@ void PWM_Timer_Init() {
 
 // 1. Frame Start (Every 20ms) - Turn BOTH Pins ON
 ISR(TIMER3_OVF_vect) {
-    // Set BLDC HIGH using direct port (PE6)
-    BLDC_PORT |= (1 << BLDC_PIN_BIT);
-    
-    // Set SERVO HIGH using standard digital write (Pin 3)
+    digitalWrite(BLDC_PIN, HIGH);
     digitalWrite(SERVO_PIN, HIGH);
     
     // Reset timer to count exactly 20ms (65536 - 40000)
     TCNT3 = 25536; 
     
-    // Set Turn-off times
+    // Set Turn-off times based on calculated values
     OCR3A = 25536 + bldc_ocr_val; 
     OCR3B = 25536 + servo_ocr_val; 
 }
 
-// 2. BLDC Turn Off (Pin 23 / PE6)
+// 2. BLDC Turn Off
 ISR(TIMER3_COMPA_vect) {
-    // Set BLDC LOW using direct port
-    BLDC_PORT &= ~(1 << BLDC_PIN_BIT);
+    digitalWrite(BLDC_PIN, LOW);
 }
 
-// 3. Servo Turn Off (Pin 3)
+// 3. Servo Turn Off
 ISR(TIMER3_COMPB_vect) {
-    // Set SERVO LOW using standard digital write
     digitalWrite(SERVO_PIN, LOW);
 }
 
@@ -203,13 +201,13 @@ void set_Servo_pulse(int pulse) {
 }
 
 // ================================================================
-// ==================== MAIN SETUP & LOOP =========================
+// ==================== MAIN LOOP =================================
 // ================================================================
 
 void setup() {
     Serial.begin(9600);
 
-    PWM_Timer_Init(); // Starts PWM for BLDC (PE6) and Servo (Pin 3)
+    PWM_Timer_Init(); // Starts PWM for Pin 23 and Pin 10
     
     // Arming / Init positions
     set_BLDC_pulse(1000); 
@@ -221,7 +219,7 @@ void setup() {
     for(int i=0; i<12; i++) imu_bytes[i] = 0;
     SPI_init_slave();
 
-    Serial.println("System Ready: Integrated Jitter-Free Control");
+    Serial.println("System Ready: Dual Manual PWM");
 }
 
 void loop() {
@@ -235,7 +233,6 @@ void loop() {
 
     // 2. UPDATE SPI BUFFER
     ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
-        // Packing MSB first
         imu_bytes[0] = (acc_x >> 8); imu_bytes[1] = (acc_x & 0xFF);
         imu_bytes[2] = (acc_y >> 8); imu_bytes[3] = (acc_y & 0xFF);
         imu_bytes[4] = (acc_z >> 8); imu_bytes[5] = (acc_z & 0xFF);
@@ -243,7 +240,6 @@ void loop() {
         imu_bytes[8] = (yawr >> 8);  imu_bytes[9] = (yawr & 0xFF);
         imu_bytes[10]= (pitch >> 8); imu_bytes[11]= (pitch & 0xFF);
 
-        // SPI Slave Select Reset Logic
         if (PINB & (1 << PB0)) {
             SPDR = imu_bytes[0];
             tx_index = 1; 
@@ -260,11 +256,9 @@ void loop() {
             packetReady = false;
         }
 
-        // Apply BLDC command
         int escPulse = map(motorVal, 0, 1023, 1000, 2000);
         set_BLDC_pulse(escPulse);
 
-        // Apply Servo command
         int servoPulse = map(servoVal, 0, 1000, 1040, 1960);
         set_Servo_pulse(servoPulse);
     }
