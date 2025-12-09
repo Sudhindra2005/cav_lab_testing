@@ -466,6 +466,7 @@ void loop() {
 
 // ==================== 4. RPM SENSOR ISR =========================
 void sensor_isr() {
+<<<<<<< HEAD:encoder/emcoder_working1/emcoder_working1.ino
     unsigned long now = micros();
     // Debounce: Ignore pulses closer than 100us
     if (now - last_pulse_time > 100) {
@@ -474,3 +475,15 @@ void sensor_isr() {
         new_pulse_available = true;
     }
 }
+=======
+  unsigned long now = micros();
+  
+  // Simple Debounce: Ignore pulses closer than 100 microseconds
+  // (Adjust this based on your max expected RPM)
+  if (now - last_pulse_time > 100) {
+    pulse_interval = now - last_pulse_time;
+    last_pulse_time = now;
+    new_pulse_available = true;
+  }
+}
+>>>>>>> c392237bbdecd04a699f098875c5db5ae96331fc:encoder/emcoder_working1/encoder_working1.ino
