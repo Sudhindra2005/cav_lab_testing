@@ -15,8 +15,8 @@
 
 // --- PIN DEFINITIONS ---
 // This code is intended to be run on the Atmega2560 chip
-// #define BLDC_PIN Chip 7, PE6      // Software PWM Channel A
-// #define SERVO_PIN Chip 8, PE5     // Software PWM Channel B
+#define BLDC_PIN Chip 7, PE6      // Software PWM Channel A
+#define SERVO_PIN Chip 8, PE5     // Software PWM Channel B
 
 // --- CONSTANTS ---
 #define MIN_PULSE 1000
@@ -253,10 +253,11 @@ ISR(SPI_STC_vect) {
  */
 
 void PWM_Timer_Init() {
-    DDRA |= (1 << PA1); // Set Pin 23 (Port A, Bit 1) as Output, replaces pinMode(BLDC_PIN, OUTPUT);
-    DDRB |= (1 << PB4); // Set Pin 10 (Port B, Bit 4) as Output, replaces pinMode(SERVO_PIN, OUTPUT);
-    PORTA &= ~(1 << PA1); // Executes in 125ns (2 cycles)
-    PORTB &= ~(1 << PB4); // Replaces: digitalWrite(SERVO_PIN, LOW);
+    // 1. Set PE6 (BLDC) and PE5 (Servo) as Outputs
+    DDRE |= (1 << PE6) | (1 << PE5);
+
+    // 2. Initialize them LOW
+    PORTE &= ~((1 << PE6) | (1 << PE5));
 
     cli(); 
     TCCR3A = 0; 
@@ -273,8 +274,8 @@ void PWM_Timer_Init() {
 
 // 1. Frame Start (Every 20ms) - Turn BOTH Pins ON
 ISR(TIMER3_OVF_vect) {
-    PORTA |= (1 << PA1); // Executes in 125ns (2 cycles)
-    PORTB |= (1 << PB4);
+    // Turn ON PE6 (BLDC) and PE5 (Servo)
+    PORTE |= (1 << PE6) | (1 << PE5);
     
     // Reset timer to count exactly 20ms (65536 - 40000)
     TCNT3 = 25536; 
@@ -296,12 +297,12 @@ ISR(TIMER3_OVF_vect) {
 
 // 2. BLDC Turn Off
 ISR(TIMER3_COMPA_vect) {
-    PORTA &= ~(1 << PA1); // Executes in 125ns (2 cycles)
+    PORTE &= ~(1 << PE6); // Executes in 125ns (2 cycles)
 }
 
 // 3. Servo Turn Off
 ISR(TIMER3_COMPB_vect) {
-    PORTB &= ~(1 << PB4); // Replaces: digitalWrite(SERVO_PIN, LOW);
+    PORTE &= ~(1 << PE5); // Replaces: digitalWrite(SERVO_PIN, LOW);
 }
 
 // Helper to set BLDC Pulse
